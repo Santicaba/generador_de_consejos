@@ -1,0 +1,78 @@
+body {
+  background-color: hsl(217, 19%, 24%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  height: 70vh;
+}
+
+#id__asesoramiento {
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: hsl(150, 100%, 66%);
+}
+
+#advice {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 19%, 38%);
+  border-radius: 10px;
+  width: 40%;
+  height: 50%;
+  padding: 15px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(153, 152, 152);
+}
+
+#icon__dado {
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  margin-top: 18%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.icondado {
+  margin: 14px 13px auto;
+}
+
+.titulo {
+  color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+  .titulo {
+    text-align: center;
+  }
+  .card {
+    width: 90%;
+  }
+  #icon__dado {
+    margin-top: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #icon__dado {
+    margin-top: 30%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

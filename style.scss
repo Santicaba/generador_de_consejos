@@ -1,0 +1,120 @@
+//Variables
+
+$color-background:hsl(217, 19%, 24%);
+$card-background:hsl(217, 19%, 38%);
+$color-card:rgb(97, 96, 96);
+$color-titulo:rgb(30, 243, 30);
+$color-fondo-dado:hsl(150, 100%, 66%);
+$color-frase:#fff;
+
+
+body{
+    background-color: $color-background;
+}
+
+// $breakpoints:(
+//     sm:375px,
+//     md:768px,
+//     lg:1024px
+// );
+
+// @mixin media-up($breakpoint) {
+//     @media screen and (min-width: map-get($breakpoints,$breakpoint)) {
+//         @content
+//     }
+// }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    // border: 2px solid red;
+    height: 70vh;
+}
+
+#id__asesoramiento{
+        letter-spacing: 2px;
+        font-weight: 800;
+        color: $color-fondo-dado;
+    }
+    #advice{
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+
+.card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: $card-background;
+        border-radius: 10px;
+        width: 40%;
+        height: 50%;
+        padding: 15px;
+    }
+
+.line{
+        height: 1px;
+        width: 100%;
+        background-color: rgb(153, 152, 152);
+}
+
+#icon__dado{
+        background-color: $color-fondo-dado;
+        position: absolute;
+        margin-top: 18%;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+}
+
+.icondado{
+        margin: 14px 13px auto;
+}
+
+
+
+.titulo{
+    color: #fff;
+}
+
+
+//desde desde 325px hasta 375px
+@media screen and (max-width:425px) {
+
+
+    .titulo{
+        text-align: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    #icon__dado{
+        margin-top: 50%;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    #icon__dado{
+        margin-top: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
